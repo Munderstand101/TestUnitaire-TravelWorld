@@ -11,6 +11,7 @@ import static org.junit.Assert.*;
 public class ClientTest {
 
     private Client leClient;
+
     @Before
     public void setUp(){
         this.leClient = new Client("Hakuna","Matata");
@@ -37,6 +38,5 @@ public class ClientTest {
         this.leClient.ajouterReservation(uneReservation);
 
         assertTrue("La liste de reservation doit contenir deux reservation", this.leClient.getLesReservations().size()==2);
-
     }
 }
